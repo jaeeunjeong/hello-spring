@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Service
+//@Service
 public class MemberService {
 
     //기존의 리포지토리를 직접 생성해서 사용한 방식
@@ -17,7 +17,7 @@ public class MemberService {
     //Spring의 DI를 이용한 방식
     private final MemberRepository memberRepository;
 
-    @Autowired
+//    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
